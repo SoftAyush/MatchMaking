@@ -134,7 +134,7 @@
                 <img src="{{ asset("storage/story/{$story->image}") }}" alt="" id="succesid"/>
                 <h2>{{$story->title}}</h2>
                 <p>{{$story->story}}</p>
-                <a href="{{route('story.show', $story->id)}}" class="readmore">Read more &raquo;</a> </div>
+                <!-- <a href="{{route('story.show', $story->id)}}" class="readmore">Read more &raquo;</a> </div> -->
             @endforeach
         </div>
         <!-- end of content right -->

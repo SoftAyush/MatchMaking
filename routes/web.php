@@ -81,25 +81,26 @@ require __DIR__.'/adminauth.php';
 require_once __DIR__ . '/jetstreams.php';
 
 //user page
-//Route::get('/home',[UserController::class, 'index'])->name('home');
-//Route::get('/privacy',[UserController::class, 'privacy'])->name('privacy');
-//Route::get('/profile',[UserController::class, 'profile'])->name('profile');
-//Route::get('/contact',[UserController::class, 'contact'])->name('contact');
-//Route::get('/term',[UserController::class, 'term'])->name('terms');
-//Route::get('/faq',[UserController::class, 'support'])->name('faq');
-//Route::get('/story/{id}',[StoryController::class, 'show'])->name('story.show');
-//Route::get('/love_story',[UserController::class, 'love_story1'])->name('Love_story_1');
-//Route::get('/love_story_2',[UserController::class, 'love_story2'])->name('Love_story_2');
-//Route::get('/love_story_3',[UserController::class, 'love_story3'])->name('Love_story_3');
-//Route::get('/love_story_4',[UserController::class, 'love_story4'])->name('Love_story_4');
-//Route::get('/love_story_5',[UserController::class, 'love_story5'])->name('Love_story_5');
-//Route::get('/love_story_6',[UserController::class, 'love_story6'])->name('Love_story_6');
-//Route::get('/chat',[UserController::class, 'chat'])->name('chat');
-//Route::get('/latest_People',[UserController::class, 'latestUser'])->name('latestUser');
-//Route::get('/Tip_For_Girl',[UserController::class, 'for_girl'])->name('Tip_For_Girl');
-//Route::get('/Tip_For_Boys',[UserController::class, 'for_boy'])->name('Tip_For_Boys');
+Route::get('/home',[UserController::class, 'index'])->name('home');
+Route::get('/privacy',[UserController::class, 'privacy'])->name('privacy');
+Route::get('/profile',[UserController::class, 'profile'])->name('profile');
+Route::get('/contact',[UserController::class, 'contact'])->name('contact');
+Route::get('/term',[UserController::class, 'term'])->name('terms');
+Route::get('/faq',[UserController::class, 'support'])->name('faq');
+Route::get('/story',[UserController::class, 'story'])->name('story');
+Route::get('/story/{id}',[StoryController::class, 'show'])->name('story.show');
+Route::get('/love_story',[UserController::class, 'love_story1'])->name('Love_story_1');
+Route::get('/love_story_2',[UserController::class, 'love_story2'])->name('Love_story_2');
+Route::get('/love_story_3',[UserController::class, 'love_story3'])->name('Love_story_3');
+Route::get('/love_story_4',[UserController::class, 'love_story4'])->name('Love_story_4');
+Route::get('/love_story_5',[UserController::class, 'love_story5'])->name('Love_story_5');
+Route::get('/love_story_6',[UserController::class, 'love_story6'])->name('Love_story_6');
+Route::get('/chat',[UserController::class, 'chat'])->name('chat');
+Route::get('/latest_People',[UserController::class, 'latestUser'])->name('latestUser');
+Route::get('/Tip_For_Girl',[UserController::class, 'for_girl'])->name('Tip_For_Girl');
+Route::get('/Tip_For_Boys',[UserController::class, 'for_boy'])->name('Tip_For_Boys');
 
-//Route::get('/people/{id}',[UserController::class,'peopleShow'])->name('people.show');
+Route::get('/people/{id}',[UserController::class,'peopleShow'])->name('people.show');
 Route::get('sentmail',[MailController::class,'sentmail'])->name('sentmail');
 Route::post('user/sentmail',[MailController::class,'mail'])->name('SentMail');
 

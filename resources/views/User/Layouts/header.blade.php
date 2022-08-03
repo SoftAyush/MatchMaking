@@ -38,7 +38,7 @@
                     Us</a></li>
             <li>
                 <div id="logout">
-                    <h3 onclick="logout()"  id="username">Welcome {{ Auth::user()->name }}</h3>
+                    <h3 onclick="logout()"  id="username">Welcome <span style="color:DodgerBlue;"> {{ Auth::user()->name }}</span> </h3>
 
                     <form action="{{ route('logout') }}" method="post">
                         @csrf

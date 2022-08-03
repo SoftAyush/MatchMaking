@@ -11,27 +11,26 @@
         <hr>
         <div id="profiletxt" >
             <b>
-
-        <p style="color: #b103fc"> Name:</p>{{$users->name}}<br>
-                <p style="color: #b103fc">Email:</p>{{$users->email}}<br>
+                Name:<p style="color: #0320fc">{{$users->name}} </p>
+                Email:<p style="color:  #0320fc">{{$users->email}}</p>
                 @php
                     $age="";
                     $birthdate = $users->dob;
                         $currentdate=date("Y-m-d");
                         $age=date_diff(date_create($birthdate),date_create($currentdate));
                 @endphp
-                <p style="color: #b103fc"> Age: </p>{{ $age->format("%y") }}<br>
-{{--         Date of birth: 2000/05/25 <br>--}}
-                <p style="color: #b103fc">Searching : </p>{{$users->looking}} <br>
-                <p style="color: #b103fc">  Gender:</p> {{$users->gender}} <br>
-                <p style="color: #b103fc"> Education:</p>{{$users->Education}}  <br>
-                <p style="color: #b103fc"> Hobbies :</p> {{$users->hobbies}} <br>
-                <p style="color: #b103fc"> Permanent Address: </p> {{$users->perm_address}}  <br>
-                <p style="color: #b103fc"> Temporary Address:</p> {{$users->temp_address}} <br>
-                <p style="color: #b103fc"> Job:</p>{{$users->job}} <br>
-                <p style="color: #b103fc"> Income :</p>{{$users->income}} <br>
-                <p style="color: #b103fc"> Good Habits :</p>{{$users->good_habit}} <br>
-                <p style="color: #b103fc">  Bad Habits :</p>{{$users->bad_habit}}
+                Age:<p style="color: #0320fc"> {{ $age->format("%y") }} </p>
+
+                Searching :<p style="color: #0320fc">{{$users->looking}} </p>
+                Gender: <p style="color:  #0320fc">{{$users->gender}} </p>
+                Education:<p style="color:  #0320fc">{{$users->Education}} </p>
+                Hobbies :<p style="color:  #0320fc">{{$users->hobbies}}</p>
+                Permanent Address: <p style="color: #0320fc"> {{$users->perm_address}} </p>
+                Temporary Address: <p style="color:  #0320fc">{{$users->temp_address}} </p>
+                Job:<p style="color:  #0320fc">{{$users->job}} </p>
+                Income :<p style="color:  #0320fc">{{$users->income}} </p>
+                Good Habits:  <p style="color:  #0320fc"> {{$users->good_habit}}</p>
+                Bad Habits : <p style="color:  #0320fc">{{$users->bad_habit}}  </p>
             </b>
             <br><br><br>
         </div>

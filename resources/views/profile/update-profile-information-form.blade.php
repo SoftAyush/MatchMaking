@@ -1,4 +1,4 @@
-<x-jet-form-section submit="updateProfileInformation">
+<x-jet-form-section submit="updateProfileInformation" >
     <x-slot name="title">
         {{ __('Profile Information') }}
     </x-slot>
@@ -87,50 +87,50 @@
         </div>
         <!-- Education -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="education" value="{{ __('Educatiion') }}" />
-            <x-jet-input id="education" type="text" class="mt-1 block w-full" wire:model.defer="state.education" />
+            <x-jet-label for="education" value="{{ __('Education') }}" />
+            <x-jet-input id="education" type="text" class="mt-1 block w-full" wire:model.defer="state.Education" />
             <x-jet-input-error for="education" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- hobbies -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="habbies" value="{{ __('Hobbies') }}" />
             <x-jet-input id="hobbies" type="text" class="mt-1 block w-full" wire:model.defer="state.hobbies" />
             <x-jet-input-error for="hobbies" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- perm Address -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="perm_address" value="{{ __('Permanent Address') }}" />
             <x-jet-input id="perm_address" type="text" class="mt-1 block w-full" wire:model.defer="state.perm_address" />
             <x-jet-input-error for="perm_address" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- temp address -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="temp_address" value="{{ __('Tempory Address') }}" />
             <x-jet-input id="temp_address" type="text" class="mt-1 block w-full" wire:model.defer="state.temp_address" />
             <x-jet-input-error for="temp_address" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- job -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="job" value="{{ __('Job') }}" />
             <x-jet-input id="job" type="text" class="mt-1 block w-full" wire:model.defer="state.job" />
             <x-jet-input-error for="job" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- income -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="income" value="{{ __('Income') }}" />
             <x-jet-input id="income" type="text" class="mt-1 block w-full" wire:model.defer="state.income" />
             <x-jet-input-error for="income" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- Good Habites -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="good-habites" value="{{ __('Good Habites') }}" />
-            <x-jet-input id="good-habites" type="text" class="mt-1 block w-full" wire:model.defer="state.good-habites" />
+            <x-jet-label for="good-habites" value="{{ __('Good Habit') }}" />
+            <x-jet-input id="good-habites" type="text" class="mt-1 block w-full" wire:model.defer="state.good_habit" />
             <x-jet-input-error for="good-habites" class="mt-2" />
         </div>
-        <!-- Education -->
+        <!-- Bad Habites -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="Bad-habites" value="{{ __('Bad Habbies') }}" />
-            <x-jet-input id="Bad-habites" type="text" class="mt-1 block w-full" wire:model.defer="state.Bad-habites" />
+            <x-jet-label for="Bad-habites" value="{{ __('Bad Habit') }}" />
+            <x-jet-input id="Bad-habites" type="text" class="mt-1 block w-full" wire:model.defer="state.bad_habit" />
             <x-jet-input-error for="Bad-habites" class="mt-2" />
         </div>
     </x-slot>

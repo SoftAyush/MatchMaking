@@ -1,8 +1,22 @@
 @extends('User.Layouts.header')
 @section('title','Profile')
 @section('content-section')
-
-<x-app-layout>
+    <style>
+        #logout{
+            margin-top: -5px;
+            float: right;
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+        }
+        #logout form{
+            margin-top: 10px;
+            border-style: solid;
+            border-color: black;
+            /*border-radius: 9px;*/
+        }
+    </style>
+<x-app-layout id="bgc">
 {{--    <x-slot name="header">--}}
 {{--        <h2 class="font-semibold text-xl text-gray-800 leading-tight">--}}
 {{--            {{ __('Profile') }}--}}
@@ -46,6 +60,7 @@
         </div>
 
 </x-app-layout>
+
 
 
 @endsection
